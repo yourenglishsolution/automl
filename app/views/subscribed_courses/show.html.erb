@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Begin date:</b>
+  <%= @subscribed_course.begin_date %>
+</p>
+
+<p>
+  <b>End date:</b>
+  <%= @subscribed_course.end_date %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @subscribed_course.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_subscribed_course_path(@subscribed_course) %> |
+<%= link_to 'Back', subscribed_courses_path %>

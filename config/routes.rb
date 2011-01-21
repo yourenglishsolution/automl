@@ -1,4 +1,10 @@
 Microlearning::Application.routes.draw do
+  resources :subscribed_courses
+
+  resources :students
+
+  resources :products
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

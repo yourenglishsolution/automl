@@ -1,0 +1,29 @@
+<%= form_for(@subscribed_course) do |f| %>
+  <% if @subscribed_course.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@subscribed_course.errors.count, "error") %> prohibited this subscribed_course from being saved:</h2>
+
+      <ul>
+      <% @subscribed_course.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :begin_date %><br />
+    <%= f.date_select :begin_date %>
+  </div>
+  <div class="field">
+    <%= f.label :end_date %><br />
+    <%= f.date_select :end_date %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

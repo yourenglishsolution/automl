@@ -1,0 +1,2 @@
+module SubscribedCoursesHelper
+end

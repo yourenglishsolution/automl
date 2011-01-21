@@ -1,0 +1,27 @@
+<h1>Listing subscribed_courses</h1>
+
+<table>
+  <tr>
+    <th>Begin date</th>
+    <th>End date</th>
+    <th>Status</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @subscribed_courses.each do |subscribed_course| %>
+  <tr>
+    <td><%= subscribed_course.begin_date %></td>
+    <td><%= subscribed_course.end_date %></td>
+    <td><%= subscribed_course.status %></td>
+    <td><%= link_to 'Show', subscribed_course %></td>
+    <td><%= link_to 'Edit', edit_subscribed_course_path(subscribed_course) %></td>
+    <td><%= link_to 'Destroy', subscribed_course, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Subscribed course', new_subscribed_course_path %>
