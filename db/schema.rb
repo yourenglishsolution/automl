@@ -16,6 +16,8 @@ ActiveRecord::Schema.define(:version => 20110125161001) do
     t.date     "begin_date"
     t.date     "end_date"
     t.string   "status"
+    t.integer  "student_id"
+    t.integer  "atomicproduct_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -40,6 +42,8 @@ ActiveRecord::Schema.define(:version => 20110125161001) do
 
   create_table "subscribes", :force => true do |t|
     t.integer  "nb_months"
+    t.integer  "student_id"
+    t.integer  "product_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

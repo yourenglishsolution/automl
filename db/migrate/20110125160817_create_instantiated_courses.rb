@@ -4,7 +4,9 @@ class CreateInstantiatedCourses < ActiveRecord::Migration
       t.date :begin_date
       t.date :end_date
       t.string :status
-
+      t.integer :student_id
+      t.integer :atomicproduct_id
+      
       t.timestamps
     end
   end
