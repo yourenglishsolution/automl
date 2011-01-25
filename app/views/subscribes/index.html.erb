@@ -1,0 +1,23 @@
+<h1>Listing subscribes</h1>
+
+<table>
+  <tr>
+    <th>Nb months</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @subscribes.each do |subscribe| %>
+  <tr>
+    <td><%= subscribe.nb_months %></td>
+    <td><%= link_to 'Show', subscribe %></td>
+    <td><%= link_to 'Edit', edit_subscribe_path(subscribe) %></td>
+    <td><%= link_to 'Destroy', subscribe, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Subscribe', new_subscribe_path %>

@@ -1,0 +1,21 @@
+<%= form_for(@subscribe) do |f| %>
+  <% if @subscribe.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@subscribe.errors.count, "error") %> prohibited this subscribe from being saved:</h2>
+
+      <ul>
+      <% @subscribe.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nb_months %><br />
+    <%= f.text_field :nb_months %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

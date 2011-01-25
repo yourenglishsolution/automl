@@ -1,5 +1,7 @@
 Microlearning::Application.routes.draw do
-  resources :subscribed_courses
+  resources :subscribes
+
+  resources :instantiated_courses
 
   resources :students
 

@@ -10,7 +10,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110120151910) do
+ActiveRecord::Schema.define(:version => 20110125161001) do
+
+  create_table "instantiated_courses", :force => true do |t|
+    t.date     "begin_date"
+    t.date     "end_date"
+    t.string   "status"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "products", :force => true do |t|
     t.string   "label"
@@ -30,10 +38,8 @@ ActiveRecord::Schema.define(:version => 20110120151910) do
     t.datetime "updated_at"
   end
 
-  create_table "subscribed_courses", :force => true do |t|
-    t.date     "begin_date"
-    t.date     "end_date"
-    t.string   "status"
+  create_table "subscribes", :force => true do |t|
+    t.integer  "nb_months"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

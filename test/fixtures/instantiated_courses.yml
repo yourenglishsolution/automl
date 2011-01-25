@@ -1,11 +1,11 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  begin_date: 2011-01-20
-  end_date: 2011-01-20
+  begin_date: 2011-01-25
+  end_date: 2011-01-25
   status: MyString
 
 two:
-  begin_date: 2011-01-20
-  end_date: 2011-01-20
+  begin_date: 2011-01-25
+  end_date: 2011-01-25
   status: MyString

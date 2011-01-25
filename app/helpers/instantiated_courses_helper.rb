@@ -1,0 +1,2 @@
+module InstantiatedCoursesHelper
+end
