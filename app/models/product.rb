@@ -1,16 +1,13 @@
 class Product < ActiveRecord::Base
   has_many :subscribes
-  
-  def products
-    @products ||= Product.find(:all)
-  end
-  
+  has_many :students, :through => :subscribes
   
 end
 
 
 class AtomicProduct < Product
   has_many :instantiatedcourses
+  has_many :students, :through => :instantiatedcourses
   
   validates_presence_of :lms_url
   validates_uniqueness_of :lms_url
