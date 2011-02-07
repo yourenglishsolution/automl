@@ -6,7 +6,10 @@ Microlearning::Application.routes.draw do
   resources :students
 
   resources :products
-
+  
+  match '/fetchall', :to => 'products#fetch_all'
+  
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
