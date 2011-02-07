@@ -10,42 +10,6 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110125161001) do
-
-  create_table "instantiated_courses", :force => true do |t|
-    t.date     "begin_date"
-    t.date     "end_date"
-    t.string   "status"
-    t.integer  "student_id"
-    t.integer  "atomicproduct_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "products", :force => true do |t|
-    t.string   "label"
-    t.string   "type"
-    t.string   "lms_url"
-    t.string   "product_ids"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "students", :force => true do |t|
-    t.string   "email"
-    t.string   "firstname"
-    t.string   "lastname"
-    t.string   "current_level"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "subscribes", :force => true do |t|
-    t.integer  "nb_months"
-    t.integer  "student_id"
-    t.integer  "product_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(:version => 0) do
 
 end
