@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  begin_date: 2011-02-08
+  end_date: 2011-02-08
+  status: MyString
+  student_id: 1
+  atomic_product_id: 1
+
+two:
+  begin_date: 2011-02-08
+  end_date: 2011-02-08
+  status: MyString
+  student_id: 1
+  atomic_product_id: 1

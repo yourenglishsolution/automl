@@ -1,0 +1,31 @@
+<h1>Listing instantiated_products</h1>
+
+<table>
+  <tr>
+    <th>Begin date</th>
+    <th>End date</th>
+    <th>Status</th>
+    <th>Student</th>
+    <th>Atomic product</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @instantiated_products.each do |instantiated_product| %>
+  <tr>
+    <td><%= instantiated_product.begin_date %></td>
+    <td><%= instantiated_product.end_date %></td>
+    <td><%= instantiated_product.status %></td>
+    <td><%= instantiated_product.student_id %></td>
+    <td><%= instantiated_product.atomic_product_id %></td>
+    <td><%= link_to 'Show', instantiated_product %></td>
+    <td><%= link_to 'Edit', edit_instantiated_product_path(instantiated_product) %></td>
+    <td><%= link_to 'Destroy', instantiated_product, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Instantiated product', new_instantiated_product_path %>

@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Begin date:</b>
+  <%= @instantiated_product.begin_date %>
+</p>
+
+<p>
+  <b>End date:</b>
+  <%= @instantiated_product.end_date %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @instantiated_product.status %>
+</p>
+
+<p>
+  <b>Student:</b>
+  <%= @instantiated_product.student_id %>
+</p>
+
+<p>
+  <b>Atomic product:</b>
+  <%= @instantiated_product.atomic_product_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_instantiated_product_path(@instantiated_product) %> |
+<%= link_to 'Back', instantiated_products_path %>
