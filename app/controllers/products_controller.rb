@@ -3,11 +3,9 @@ require "product"
 class ProductsController < ApplicationController
   # Get all courses from LMS
   def fetch_all
-  	@list = AtomicProduct.fetch_all
+  	response = AtomicProduct.fetch_all
   	
-  	respond_to do |format|
-  	  format.xml { render :xml => @list }
-  	end
+  	render :text => response.inspect
   end
   
   # GET /products
