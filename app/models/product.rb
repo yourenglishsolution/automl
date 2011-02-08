@@ -22,22 +22,12 @@ class AtomicProduct < Product
   
   # call url api courses docebo
   # http::net
-  #def self.fetch(opts = {})
-	#connection = Net::HTTP.new("ec2-46-137-4-94.eu-west-1.compute.amazonaws.com")
-	# response = ""
-	#connection.start do |http|
-	 # req = Net::HTTP::Get.new("/api/rest.php?q=/restAPI/auth/getauthmethod")
-	 # response = http.request(req)
-	# end
-	#h = Net::HTTP.new('ec2-46-137-4-94.eu-west-1.compute.amazonaws.com', 80)
-	#resp, data = h.get('/api/rest.php?q=/restAPI/auth/getauthmethod', nil )
 	
   def self.fetch
-	http = Net::HTTP.new("ec2-46-137-4-94.eu-west-1.compute.amazonaws.com")
+	http = Net::HTTP.new("ec2-46-137-4-94.eu-west-1.compute.amazonaws.com")	
 	request = Net::HTTP::Get.new("/api/rest.php?q=/restAPI/auth/getauthmethod")
-	http.request(request)
+	response = http.request(request)
   end
-	
   
 end
 
