@@ -27,6 +27,7 @@ class AtomicProduct < Product
 	http = Net::HTTP.new("ec2-46-137-4-94.eu-west-1.compute.amazonaws.com")	
 	request = Net::HTTP::Get.new("/api/rest.php?q=/restAPI/auth/getauthmethod")
 	response = http.request(request)
+	
   end
   
 end
