@@ -1,11 +1,13 @@
 require "product"
 
-class ProductsController < ApplicationController
+class ProductsController < ApplicationController	
   # Get all courses from LMS
   def fetch_all
-  	response = AtomicProduct.fetch_all
+  	atom = AtomicProduct.new
+  	response = atom.fetch_all
   	
-  	render :text => response.inspect
+  	render :text => response.body
+  	
   end
   
   # GET /products
