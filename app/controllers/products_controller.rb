@@ -8,15 +8,15 @@ class ProductsController < ApplicationController
 		response.each do |course|
 			AtomicProduct.create(course)
 		end
-  	#render :text => response.class.to_s
-  	render :nothing => true
+  	
+  	redirect_to products_path
   end
   
   # GET /products
   # GET /products.xml
   def index
     @products = Product.all
-
+    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @products }
