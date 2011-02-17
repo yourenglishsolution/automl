@@ -11,6 +11,16 @@
 </p>
 
 <p>
+  <b>Lms:</b>
+  <%= @product.lms_id %>
+</p>
+
+<p>
+  <b>Lms name:</b>
+  <%= @product.lms_name %>
+</p>
+
+<p>
   <b>Lms url:</b>
   <%= @product.lms_url %>
 </p>
@@ -19,6 +29,7 @@
   <b>Product ids:</b>
   <%= @product.product_ids %>
 </p>
+
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>

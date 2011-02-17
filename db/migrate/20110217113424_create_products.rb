@@ -3,6 +3,8 @@ class CreateProducts < ActiveRecord::Migration
     create_table :products do |t|
       t.string :label
       t.string :type
+      t.integer :lms_id
+      t.string :lms_name
       t.string :lms_url
       t.string :product_ids
 

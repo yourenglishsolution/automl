@@ -3,11 +3,15 @@
 one:
   label: MyString
   type: MyString
+  lms_id: 1
+  lms_name: MyString
   lms_url: MyString
   product_ids: MyString
 
 two:
   label: MyString
   type: MyString
+  lms_id: 1
+  lms_name: MyString
   lms_url: MyString
   product_ids: MyString

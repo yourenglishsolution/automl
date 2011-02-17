@@ -1,11 +1,11 @@
 Microlearning::Application.routes.draw do
+  resources :products
+
   resources :instantiated_products
 
   resources :subscribes
 
   resources :students
-
-  resources :products
   
   match '/fetchall', :to => 'products#fetch_all'
   

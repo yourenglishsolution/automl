@@ -4,6 +4,8 @@
   <tr>
     <th>Label</th>
     <th>Type</th>
+    <th>Lms</th>
+    <th>Lms name</th>
     <th>Lms url</th>
     <th>Product ids</th>
     <th></th>
@@ -15,6 +17,8 @@
   <tr>
     <td><%= product.label %></td>
     <td><%= product.type %></td>
+    <td><%= product.lms_id %></td>
+    <td><%= product.lms_name %></td>
     <td><%= product.lms_url %></td>
     <td><%= product.product_ids %></td>
     <td><%= link_to 'Show', product %></td>
@@ -26,5 +30,5 @@
 
 <br />
 
-<%= link_to 'Fetch Course', fetchall_path %> |
+<%= link_to 'Fetch course', fetchall_path %> |
 <%= link_to 'New Product', new_product_path %>
