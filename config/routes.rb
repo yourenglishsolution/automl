@@ -1,9 +1,9 @@
 Microlearning::Application.routes.draw do
+  resources :subscribes
+
   resources :products
 
   resources :instantiated_products
-
-  resources :subscribes
 
   resources :students
   

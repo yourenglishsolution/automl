@@ -23,7 +23,7 @@ class AtomicProduct < Product
   private
    
 	def self.connect_to_docebo
-		@lms = Net::HTTP.new("ec2-46-137-4-94.eu-west-1.compute.amazonaws.com")	
+		@lms = Net::HTTP.new("ec2-46-137-4-94.eu-west-1.compute.amazonaws.com")
 	end
 
   def self.fetch
