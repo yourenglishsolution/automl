@@ -2,6 +2,8 @@
 
 <table>
   <tr>
+    <th>Student</th>
+    <th>Product</th>
     <th></th>
     <th></th>
     <th></th>
@@ -9,6 +11,8 @@
 
 <% @subscribes.each do |subscribe| %>
   <tr>
+    <td><%= subscribe.student_id %></td>
+    <td><%= subscribe.product_id %></td>
     <td><%= link_to 'Show', subscribe %></td>
     <td><%= link_to 'Edit', edit_subscribe_path(subscribe) %></td>
     <td><%= link_to 'Destroy', subscribe, :confirm => 'Are you sure?', :method => :delete %></td>
